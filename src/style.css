@@ -1,0 +1,22 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+.vertical-text{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.bg-furniture{
+    background-image: url(./assets/images/furniture/bg-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 150px;
+}
