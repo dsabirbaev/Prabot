@@ -18,5 +18,20 @@
     background-image: url(./assets/images/furniture/bg-pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: 150px;
+    background-position-x: calc(100% + 150px);
+}
+
+.bg-footer{
+    background-image: url(./assets/images/footer-flower.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.bg-video{
+    background-image: url(./assets/images/bg-video.svg);
+    background-repeat: no-repeat;
+    background-position: right 58%;
+}
+
+.quality-shadow{
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.09);
 }

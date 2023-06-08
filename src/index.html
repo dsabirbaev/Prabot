@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body style="font-family: 'Roboto';">
+<body style="font-family: 'Roboto';" class="bg-[url('./assets/images/flower.png')] bg-no-repeat">
     <header class="relative top-[77px]">
         <div class="container mx-auto px-5">
             <nav class="flex items-center justify-between h-[110px]">
@@ -39,8 +39,8 @@
         </div>
     </header>
 
-    <main>
-        <section id="intro" class="pt-[250px] bg-[url('./assets/images/flower.png')] bg-no-repeat relative z-30">
+    <main class="bg-video">
+        <section id="intro" class="pt-[250px]  relative z-30">
             <div class="container mx-auto px-5">
                 <div class="flex items-start gap-x-[100px]">
 
@@ -53,8 +53,12 @@
                             class="flex font-black py-5 px-[35px] text-[24px] text-white bg-[#7AB674] items-center gap-x-[37px]"><span>BELI
                                 SEKARANG</span> <i data-feather="arrow-right"></i></button>
                     </div>
-                    <div class="p-2 flex items-start -translate-y-12 gap-x-[51px]">
+                    <div class="p-2 flex items-start -translate-y-12 gap-x-[51px] relative">
                         <img src="./assets/images/intro/shelf.png" alt="image">
+                        <img src="./assets/images/intro/shadow.svg" alt="shadow" class="absolute left-[-100px] bottom-[-10px] z-40">
+                        <img src="./assets/images/intro/360.png" alt="controller"
+                        class="absolute left-[170px] bottom-[-80px] z-50">
+                       
                         <ul class="text-[#959595] mt-[233px]">
                             <li>
                                 <h3 class="font-bold text-black text-[24px] leading-[22.8px] mb-[21px] w-[124px]">Ukuran
@@ -82,16 +86,21 @@
         <section id="intro-bottom" class="relative -top-[350px]">
             <div class="flex h-[583px]">
                 <div class="left-bg w-[25%] h-[100%]"></div>
-                <div class="right-bg w-[75%] h-[100%] bg-[#B09B8C]">
-                    <img src="./assets/images/intro/shadow.svg" alt="shadow" class="absolute left-[40%] top-[30%] z-40">
-                    <img src="./assets/images/intro/360.png" alt="controller"
-                        class="absolute left-[62%] top-[45%] z-50">
-
+                <div class="right-bg w-[75%] h-[100%] bg-[#B09B8C] relative">
+                                       
+                    <div class="flex absolute top-[50%] left-[-64px] cursor-pointer">
+                        <div class="w-[64px] h-[64px] bg-[#B09B8C] flex items-center justify-center">
+                            <i data-feather="arrow-left" class="text-white"></i>
+                        </div>
+                        <div class="w-[64px] h-[64px] bg-white flex items-center justify-center">
+                            <i data-feather="arrow-right" class="text-[#B09B8C]"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="absolute top-0 w-full">
                 <div class="container mx-auto px-5">
-                    <div class="flex">
+                    <div class="flex relative">
                         <div class="left-wrap w-[25%]">
                             <div class="line h-[412px] w-1 bg-[#C9C9C9] mt-[41px]">
                                 <span class="w-2 bg-[#B09B8C] h-[49px] block  relative top-[46px]"></span>
@@ -99,8 +108,8 @@
                             <h2 class="font-bold text-xl vertical-text"><span class="text-green-300">01</span>
                                 <span>/04</span></h2>
                         </div>
-                        <div class="right-wrap w-[75%] relative">
-                            <div class="absolute top-[90%] left-[8%] flex gap-x-[23px]">
+                        <div class="right-wrap w-[75%]">
+                            <div class="absolute top-[90%] left-[30%] flex gap-x-[23px]">
                                 <div>
                                     <img src="./assets/images/intro/1.png" alt="1"
                                         class="border-4 border-white rounded-full mb-10">
@@ -123,14 +132,7 @@
                                 </div>
                             </div>
 
-                            <div class="flex absolute top-[70%] left-[-92px] cursor-pointer">
-                                <div class="w-[64px] h-[64px] bg-[#B09B8C] flex items-center justify-center">
-                                    <i data-feather="arrow-left" class="text-white"></i>
-                                </div>
-                                <div class="w-[64px] h-[64px] bg-white flex items-center justify-center">
-                                    <i data-feather="arrow-right" class="text-[#B09B8C]"></i>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -148,7 +150,7 @@
                                 ruangan dan membuat ruangan anda terlihat lebih luas juga lapang dengan <span class="text-[#7AB674]">tetap terkesan
                                 elegan.</span></p>
                         </div>
-                        <div class="right-content px-[55px] py-[80px]  absolute right-0 top-[10%] bg-white">
+                        <div class="right-content px-[55px] py-[80px]  absolute left-[800px] top-[10%] bg-white">
                             <h1 class="font-bold text-[48px] text-[#7AB674] mb-[55px]">Eco Furniture</h1>
                             <ul class="font-semibold text-[24px] flex flex-col gap-y-[64px]">
                                 <li class="flex items-center"><img src="./assets/images/furniture/plus.svg" alt="plus" class="mr-[23px]"> Harga lebih terjangkau</li>
@@ -172,7 +174,147 @@
                 </div>
             </div>
         </section>
+        <section id="wardrobe" class="mt-[157px]">
+            <div class="container mx-auto px-5">
+                <div class="wrapper flex flex-col items-center">
+                    <h3 class="font-bold text-[#7AB674] text-[20px] tracking-[30%] uppercase text-center">Fitur Produk</h3>
+                    <h1 class="text-[#273029] font-medium text-[64px] text-center my-[30px]"><span class="text-[#B09B8C] font-black">Kelebihan</span> Alfonso Wardrobe </h1>
+                    <p class="text-[18px] font-medium leading-[30px] text-center text-[#959595] max-w-[1000px] mb-[68px]">Untuk furnitur ruangan dengan kualitas terbaik <span class="text-[#7AB674] font-bold">Alfonso</span> bisa
+                        menjadi salah satu pllihan, selain kuat, unik, dan dengan
+                        konsep <span class="text-[#7AB674] font-bold">Timless design</span> sangat cocok untuk ruangan
+                        bersantai anda.</p>
+
+                    <div class="wardrobe-cards flex items-center justify-between gap-x-[10px]">
+                        <div class="wardrobe-card">
+                            <img src="./assets/images/wardrobe/1.jpg" alt="pic" class="mb-[52px]">
+                            <p class="text-[#959595] text-[18px] leading-[21px] font-medium text-center max-w-[221px] mx-auto">Terbuat dari bahan kayu
+                                mahoni pilihan.</p>
+                        </div>
+                        <div class="wardrobe-card">
+                            <img src="./assets/images/wardrobe/2.jpg" alt="pic" class="mb-[52px]">
+                            <p class="text-[#959595] text-[18px] leading-[21px] font-medium text-center max-w-[221px] mx-auto">Finishing menggunakan cat
+                                duco semua sisi.</p>
+                        </div>
+                        <div class="wardrobe-card">
+                            <img src="./assets/images/wardrobe/3.jpg" alt="pic" class="mb-[52px]">
+                            <p class="text-[#959595] text-[18px] leading-[21px] font-medium text-center max-w-[221px] mx-auto">Furnitur yang ramah
+                                lingkungan.</p>
+                        </div>
+                        <div class="wardrobe-card">
+                            <img src="./assets/images/wardrobe/4.jpg" alt="pic" class="mb-[52px]">
+                            <p class="text-[#959595] text-[18px] leading-[21px] font-medium text-center max-w-[221px] mx-auto">Plywood dan rel metal berkualitas</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section id="video" class="mt-[173px] ">
+            <div class="container mx-auto px-5">
+                <div class="wrapper flex items-center justify-between">
+                    <div class="video-left max-w-[560px]">
+                        <h2 class="text-[#7AB674] text-[20px] tracking-[20%] font-black uppercase mb-[45px]">overview  Produk</h2>
+                        <h1 class="font-medium text-[64px] text-[#273029] leading-[60px] mb-[79px]">Alfonso Wardrobe 2 Doors <span class="font-black text-[#B09B8C]">Solusinya</span></h1>
+                        <ul class="flex flex-col gap-y-[46px]">
+                            <li class="text-[#959595] flex items-center gap-x-[34px] font-medium text-[16px]"><span class="w-[47px] h-[47px] bg-[#B09B8C] text-white flex items-center justify-center rounded-full font-black text-[20px]">01</span> Terdapat gantungan kuat dapat dilepas pasang</li>
+                            <li class="text-[#959595] flex items-center gap-x-[34px] font-medium text-[16px]"><span class="w-[47px] h-[47px] bg-[#B09B8C] text-white flex items-center justify-center rounded-full font-black text-[20px]">02</span> Pintu dilengkapi engsel berkualitas mudah saat membuka tutup</li>
+                            <li class="text-[#959595] flex items-center gap-x-[34px] font-medium text-[16px]"><span class="w-[47px] h-[47px] bg-[#B09B8C] text-white flex items-center justify-center rounded-full font-black text-[20px]">03</span> Ada 2 laci berbeda ukuran untuk simpan barang sesuai kebutuhan</li>
+                            <li class="text-[#959595] flex items-center gap-x-[34px] font-medium text-[16px]"><span class="w-[47px] h-[47px] bg-[#B09B8C] text-white flex items-center justify-center rounded-full font-black text-[20px]">04</span> Terdapat gantungan kuat dapat dilepas pasang</li>
+                            <li class="text-[#959595] flex items-center gap-x-[34px] font-medium text-[16px]"><span class="w-[47px] h-[47px] bg-[#B09B8C] text-white flex items-center justify-center rounded-full font-black text-[20px]">05</span> Terdapat gantungan kuat dapat dilepas pasang</li>
+                        </ul>
+                    </div>
+                    <div class="video-right relative">
+                        <img src="./assets/images/video/play.svg" alt="play" class="absolute left-[-75px] top-[321px]">
+                        <img src="./assets/images/video/shelf.jpg" alt="pic">
+                        <img src="./assets/images/video/setting.svg" alt="play" class="absolute bottom-0 left-0">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="mt-[229px]">
+            <div class="container mx-auto px-5">
+                <div class="wrapper flex gap-x-[13px]">
+                    <div class="gallery-left">
+                        <img src="./assets/images/gallery/1.jpg" alt="pic" class="mb-[15px]">
+                        <div class="relative">
+                            <img src="./assets/images/gallery/2.jpg" alt="pic">
+                            <button class="font-black text-[24px] w-[310px] h-[64px] bg-[#7AB674] text-white absolute top-[50%] left-[12%]">CEK LAINNYA</button>
+                        </div>
+                    </div>
+                    <div class="gallery-right">
+                        <div class="max-w-[607px] py-[79px] pl-[49px]">
+                            <h1 class="font-media text-[64px] leading-[60px] text-[#273029] mb-[52px]"><span class="text-[#B09B8C] font-black">Galeri</span> Alfonso Wardrobe 2 Doors</h1>
+                            <p class="text-[#959595] text-[18px] leading-[30px] font-medium max-w-[548px]">Dilengkapi desain pegangan
+                                sederhana dan dipasang kuat
+                                menggunakan baut sehingga
+                                ﬁdak mudah terlepas dari
+                                kabinet.
+                                Serta penahan berbahan
+                                kayu sebagai penopang sehingga
+                                dapat menahan beban berlebih
+                                saat digantung. Dan juga dilengkapi penahan
+                                gantungan yang disekrup
+                                dengan kuat agar tidak
+                                goyang saat digunakan
+                                <span class="text-[#7AB674]">menggantung pakaian.</span></p>
+                        </div>
+                        <img src="./assets/images/gallery/3.jpg" alt="pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quality" class="mt-[164px]">
+            <div class="container mx-auto px-5">
+                <div class="wrapper relative">
+                    <h3 class="text-[#7AB674] text-[20px] tracking-[20%] font-black uppercase text-center mb-[22px]">pilih produk terbaik</h3>
+                    <h1 class="text-[#273029] font-media text-[64px] text-center mb-[140px]">Alfonso Wardrobe 2 Doors</h1>
+                    <button class="font-black text-[24px] w-[310px] h-[64px] bg-[#7AB674] text-white absolute bottom-[-180px] left-[40%]">CEK LAINNYA</button>
+                    <div class="absolute bottom-[-700px] left-0 flex gap-x-[112px] bg-white py-[90px] px-[122px] w-full quality-shadow">
+                        <h1 class="font-black text-[#B09B8C] text-[128px]">QnA</h1>
+                        <ul class="flex flex-col gap-y-[88px]">
+                            <li class="flex items-center gap-x-[25px] font-medium"><img src="./assets/images/arrow.svg" alt="arrow">Rumah berantakan karena banyak barang tercecer?</li>
+                            <li class="flex items-center gap-x-[25px] font-medium"><img src="./assets/images/arrow.svg" alt="arrow">Perlu simpan pakaian agar mudah dicari?</li>
+                            <li class="flex items-center gap-x-[25px] font-medium"><img src="./assets/images/arrow.svg" alt="arrow">Pengen dekor kamar anak biar estetik?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#EEEEEE] h-[437px]">
+
+            </div>
+        </section>
     </main>
+
+    <footer class="mt-[286px] bg-footer">
+        <div class="container mx-auto px-5">
+            <dir class="wrapper">
+                <div class="flex gap-x-[144px] mb-[89px]">
+                    <ul>
+                        <li class="font-medium text-[32px] text-[#273029] mb-[26px] uppercase">Prabot</li>
+                        <li><p class="font-medium text-[18px] text-[#959595] leading-[30.63px] max-w-[308px]">PRABOT menyediakan berbagai koleksi berkualitas untuk
+                            hunian, kantor, aksesoris, sampai ruang komersial dengan
+                            beragam gaya dan desain terbaru untuk memenuhi kebutuhan
+                            pelanggan terhadap furnitur idaman.</p></li>
+                    </ul>
+                    <ul class="font-medium text-[18px] text-[#273029]">
+                        <li class="font-medium text-[32px] text-[#273029] mb-[26px]">Links</li>
+                        <li class="mb-[31px]">Product</li>
+                        <li class="mb-[31px]">Fitur & Tips</li>
+                        <li class="mb-[31px]">Gallery</li>
+                        <li>Contact</li>
+                    </ul>
+                    <ul class="font-medium text-[18px] text-[#273029]">
+                        <li class="font-medium text-[32px] text-[#273029] mb-[26px]">Contact</li>
+                        <li class="mb-[31px]">+62 2309-1239</li>
+                        <li class="mb-[31px]">infoparbot@mail.com</li>
+                        <li>Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-medium text-[18px] text-[#959595]">All Right Reserved - 2022</p>
+                </div>
+            </dir>
+        </div>
+    </footer>
 </body>
 <script>
     feather.replace()
